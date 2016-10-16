@@ -1,0 +1,180 @@
+<!-- Ici est l'entête du fichier HTML, on précise exactement quelle convention on va utiliser avec le doctype (type de document) -->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Ici on précise tout ce dont sera constitué le fichier HTML : les fichiers CSS à importer, les fichiers Javascript à importer,
+    le titre principal, l'encodage ... -->
+    <meta charset="UTF-8">
+    <title>Eirbweirb</title>
+
+    <!-- imports CSS -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+
+<!-- Ici commence le véritable corps du fichier HTML -->
+
+<body oncontextmenu="contextmenu()">
+
+    <div class="wrapper">
+        <!-- On divise le corps en plusieurs sous-parties : l'en-tête (header), le développement, le footer ... -->
+        <section id="header">
+            <header>
+                <span class="image">
+                    <img  src="avatar.jpg" alt="prout">
+                </span>
+
+                <h1>Un titre</h1>
+                <p>C'est un long texte introductif qui ne sert probablement à rien</p>
+            </header>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="#presentation">Présentation</a></li>
+                    <li><a href="#listes">Les listes</a></li>
+                    <li><a href="#tableau">Les tableaux</a></li>
+                    <li><a href="#texte">Le formattage HTML</a></li>
+                    <li><a href="#transitions">Les transitions</a></li>
+                </ul>
+            </nav>
+        </section>
+
+
+        <div id="main">
+            <section id="presentation" class="section">
+                <div id="banner">
+                    <img src="banner.jpeg" alt="LABANNIERE">
+                </div>
+
+                <div class="container">
+                    <header>
+                        <h1>Une présentation</h1>
+                        <h2>Le sous titre de cette présentation</h2>
+                    </header>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    </p>
+                </div>
+
+            </section>
+            <section id="listes" class="section">
+                <div class="container">
+                    <h2>Ici nous voyons quelques utilisations des listes.</h2>
+                    <p>En vrai les listes sont utiles pour des éléments récurrents. Ceci dit si leur nombre est fixe et/ou limité on peut utiliser d'autres choses (comme des suites de div).</p>
+
+                    <ul class="list">
+                        <li>
+                            <span class="list-image"><img src="bouchon.jpg" alt="lebouchon"></span>
+                            <div class="list-content">
+                                <p class="list-item-head">Un bouchon est un bouchon</p>
+                                <p>Ceci est un magnifique bouchon, à ne pas confondre avec le faussaire. Un faussaire est une personne produisant un faux.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="list-image"><img src="meme.gif" alt="lememe"></span>
+                            <div class="list-content">
+                                <p class="list-item-head">Histoire du meme</p>
+                                <p>Le terme de « mème » a été proposé pour la première fois par Richard Dawkins dans Le Gène égoïste (1976) par déformation du terme mimesis (« imitation », en grec ancien) par analogie avec le mot gène. </p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="list-image"><img src="idee.jpg" alt="lidee"></span>
+                            <div class="list-content">
+                                <p class="list-item-head">Et la suite ?</p>
+                                <p>Je ne vous cache pas que pour la suite je n'ai vraiment pas d'idée de quoi mettre, éclatez vous (sarcastique) à mettre ce que vous voulez...</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="tableau" class="section">
+                <div class="container">
+                    <h2>Ici nous allons tenter de voir les tables (tableaux).</h2>
+                    <p>On va pas faire la table toute dégueu toute manière vous allez la faire tout seul... </p>
+
+                    <table class="table">
+                        <tbody>
+                            <tr class="table-head">
+                                <th>Un champ</th>
+                                <th>Un autre champ</th>
+                                <th>Encore un autre</th>
+                            </tr>
+                            <tr>
+                                <td>Un donnée intéressante</td>
+                                <td>Un donnée pas intéressante</td>
+                                <td>Un donnée pénible</td>
+                            </tr>
+                            <tr>
+                                <td>Un donnée sympathique</td>
+                                <td>Un donnée plutôt jolie</td>
+                                <td>Un donnée laide</td>
+                            </tr>
+                            <tr>
+                                <td>Un donnée donnée</td>
+                                <td>Un donnée récupérée</td>
+                                <td>Un donnée volée</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p>N'était-ce pas super intéressant ? incroyable non ? Allons voir la prochaine étape</p>
+
+                </div>
+            </section>
+            <section id="texte" class="section">
+                <div class="container">
+                    <h2>A propos des balises de texte</h2>
+                    <p>On peut changer ou formater le texte de plein de moyens différents. Voyez les exemples ci-contre :</p>
+                    <p>
+                        Avec la balise strong : <strong>c'est un texte intéressant</strong> <br>
+                        Avec la balise small : <small>C'est un tout petit texte</small> <br>
+                        Avec la balise mark : <mark>C'est un texte surligné</mark> <br>
+                        Avec la balise del : <del>C'est un texte barré (lol)</del> <br>
+                        Et là en fait j'vais pas tous les lister donc go <a class="a-style" href="http://www.w3schools.com/html/html_formatting.asp" target="_blank">W3Schools</a> (stylé non ?).
+                    </p>
+                </div>
+            </section>
+            <section id="transitions" class="section">
+                <div class="container">
+                    <h2>Les transitions CSS</h2>
+                    <p>C'est dommage de faire tout ça sans pouvoir faire de zolis petits effets à la con, d'où les transitions.</p>
+                    <p>On peut faire des transitions avec à peu près n'importe quoi ...</p>
+                    <div class="transition-container">
+                        <p>Avec l'attribut hover (quand vous passez par dessus)</p>
+                        <div class="square"></div>
+                        <p>Ou l'attribut active (quand vous faites un clic gardé dessus)</p>
+                        <div class="trans-text">
+                            <span>Et jouer sur un peu toutes les propriétés CSS</span>
+                        </div>
+                        <p>Le léger problème c'est que l'on en peut pas gérer d'éléments sur lesquels cliquer. Techniquement on doit faire du Javascript pour ça. Mais en faisant des petits tricks on arrive à des résultats sympathiques ...</p>
+                        <input type="checkbox" id="toggle">
+                        <label for="toggle">FAIS LE</label> (en vrai clic pas ça bug un peu même si ça fait l'effet demandé)
+                        <div id="trick"></div>
+                        <p>Mais sinon c'est chiant du coup parce qu'il faut gérer la compatibilité entre Webkit (Safari, Chrome, Opera) et Mozilla (firefox). On vomit sur IE hein, parce que c'est IE.</p>
+                    </div>
+
+                </div>
+            </section>
+            <section id="theend" class="section">
+                <div class="container">
+                    <h2>Bon ben voilà c'est à peu près tout...</h2>
+                    <p>L'idée c'est d'arriver à refaire ce site sans regarder comment il est fait. Allez sur W3Schools, Alsacréations, W3C et j'en passe pour toutes les références plus précises sur le HTML et le CSS en tant que tels.</p>
+                    <p>
+                        Pour télécharger la base de ce site
+                        <form method="get" action="depart.zip">
+                            <button type="submit">Cliquez moi</button>
+                        </form>
+                    </p>
+
+                </div>
+            </section>
+
+        </div>
+        <footer>
+            Eirbware inc
+        </footer>
+    </div>
+</body>
+
+</html>
