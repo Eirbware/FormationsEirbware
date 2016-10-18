@@ -1,4 +1,7 @@
 <?php
+    //Pour plus tard
+    session_start();
+
     function sayHello($nom){
         echo "Hello dear " . $nom . "<br/>";
     }
@@ -65,4 +68,14 @@
     }
 
     //Voir les fonctions array_key_exists, in_array, array_search pour la recherche dans un tableau.
+
+    brpls();
+    brpls();
+    brpls();
+    brpls();
+    if(isset($_SESSION["username"])){
+        echo "On se connait ! tu es " . $_SESSION["username"] . "non ? <3";
+    }
 ?>
+
+

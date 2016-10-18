@@ -1,4 +1,12 @@
-<?php if($_POST["pass"] != "" && $_POST["username"] != "") {
+<?php
+
+    function create_session($username){
+        session_start();
+        $_SESSION['username'] = $username;
+    }
+
+
+    if($_POST["pass"] != "" && $_POST["username"] != "") {
 
         $passfile = fopen("pass.txt", "r");
         $found = false;
@@ -11,6 +19,7 @@
         fclose($passfile);
 
         if($found){
+            create_session($_POST["username"]);
             header("Refresh: 3; url=index.php");
             echo 'Vous allez être redirigé dans 3 secondes ...';
             $mdp = false;
