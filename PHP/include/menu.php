@@ -9,7 +9,8 @@
 
         <h1>Un titre</h1>
         <p>C'est un long texte introductif qui ne sert probablement à rien</p>
-        <button><a href="logout.php">Deconnexion</a></button>
+        <p><?php echo "Bonjour " . $_SESSION["username"] . "! " ?></p>
+        <button><a style="text-decoration: none;" href="logout.php">Deconnexion</a></button>
     </header>
 
     <nav class="nav">
