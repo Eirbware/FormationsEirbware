@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if(!isset($_SESSION["username"])) {
+    header("Location: mdp.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -19,15 +26,9 @@
                 $content_dir = "include/content/";
                 $scan = scandir($content_dir);
 
-                if(isset($_GET['name']) AND isset($_GET["age"])){
-                    include("include/forms.php");
-                    include($content_dir . "7_formulaire.php");
-                }else {
-                    print_r($_GET);
-                    foreach ($scan as $file) {
-                        if ($file[0] != ".") {
-                            include($content_dir . $file);
-                        }
+                foreach ($scan as $file) {
+                    if ($file[0] != ".") {
+                        include($content_dir . $file);
                     }
                 }
 
