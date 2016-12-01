@@ -89,7 +89,7 @@ function rien(untruc){
     }
 }
 
-Console.log("rien");
+Console.log(rien("rien"));
 */
 
 //Maintenant créez une fonction qui suivant une personne en paramètre, qui est un objet (nom, age, taille), affiche
