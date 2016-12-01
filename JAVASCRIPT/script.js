@@ -20,7 +20,7 @@ Console.log(a);*/
 
 //A l'aide de la fonction prompt(String message) : String answer, demander à l'utilisateur son nom ?
 // ...
-//Console .log(nom);
+//Console.log(nom);
 
 
 //Maintenant demandez lui son age, puis à l'aide de la fonction parseInt(String value) : int value, transformez la
