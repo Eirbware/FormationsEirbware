@@ -5,27 +5,20 @@
     <title>Title</title>
 </head>
 <body>
+    <!-- Créer ici un cadre de largeur 500*500, de la couleur de fond du choix et en position relative -->
+    <div id="game">
+        <!-- Ici on mettra les éléments qui seront manipulés par le javascript -->
+        <div id="g1"></div>
+        <div id="g2"></div>
+        <div id="g3"></div>
+    </div>
+</body>
 
-<!-- Créer ici un cadre de largeur 500*500, de la couleur de fond du choix et en position relative -->
-<div id="game">
-    <!-- Ici on mettra les éléments qui seront manipulés par le javascript -->
-    <div id="g1"></div>
-    <div id="g2"></div>
-    <div id="g3"></div>
-</div>
+<!-- En général on inclue les scripts JS à la fin, comme ça on est sur que l'intégralité du document
+     HTML a bien été chargée -->
 <script src="script.js"></script>
 <script>
-    g1 = new Globe(document.getElementById("g1"), 100, 0, 0, "blue");
-    g2 = new Globe(document.getElementById("g2"), 50, 0, 200, "red");
-    g2 = new Globe(document.getElementById("g3"), 42, 70, 10, "green");
+    //ET MAINTENANT ON INSTANCIE LES GLOBES <3
 </script>
-<style>
-    #game{
-        width: 500px;
-        height:500px;
-        background-color: antiquewhite;
-        position: relative;
-    }
-</style>
-</body>
+
 </html>
