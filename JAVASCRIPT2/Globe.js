@@ -21,6 +21,8 @@ var Globe = function(div, size, x, y, color) {
     //Continuons ...
     //On crée un attribue div qui caractérise l'objet, et qui contient notre div du document...
     this.div = div;
+    //Pour pouvoir récupérer l'instance de Globe associée à une div, on ajoute un attribut
+    // "object" à cette div, qui a pour valeur l'instance de Globe
     this.div.object = this;
 
     //N'oublions pas que nous voulons faire bouger nos petits "globes"
@@ -102,7 +104,6 @@ Globe.refreshFrequency = 30;
 Globe.refreshInterval = null;
 
 Globe.startRefresh = function(){
-    Globe.stopRefresh();
     //On crée un intervalle ! On veut lancer la fonction refresh toutes les refreshFrequency !
     //Allez voir la doc hein
 };
