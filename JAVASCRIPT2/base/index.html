@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="game">
+    <div id="g1"></div>
+    <div id="g2"></div>
+    <div id="g3"></div>
+</div>
+<script src="Globe.js"></script>
+<script>
+    g1 = new Globe(document.getElementById("g1"), 100, 0, 0, "blue");
+    g2 = new Globe("g2", 50, 0, 200, "red");
+    g2 = new Globe("g3", 42, 70, 10, "green");
+    g2 = new Globe("game", 42, 90, 20, "purple", "mdr");
+    g2 = new Globe("game", 90, 200, 100, "#FA7A00", true);
+</script>
+<style>
+    #game{
+        width: 500px;
+        height:500px;
+        background-color: antiquewhite;
+        position: relative;
+    }
+</style>
+</body>
+</html>
